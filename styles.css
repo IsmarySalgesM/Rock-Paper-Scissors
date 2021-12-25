@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background: url(./img/pickimgaen.jpg);
+  background-size: cover;
+}
+
+.login {
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 30px 60px 0 rgb(0 0 0 / 30%);
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+  height: 100vh;
+}
+
+.game,
+.win-loose,
+.btn-close-sesion,
+.formulario-mensaje {
+  display: none;
+}
+
+#btn-games button,#result i{
+  margin: 0 20px;
+    padding: 25px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(41, 40, 40);
+    font-size: 33px;
+    color: orange;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+div#result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.game{
+  width: 40%;
+}
+div#btn-games {
+  display: flex;
+  justify-content: center;
+}
+
+.result {
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.verde {
+ color:green;
+}
+
+.rojo {
+color:red;
+}
+.formulario-input-error {
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+}
+
+.formulario-mensaje-exito {
+  font-size: 14px;
+  color: #119200;
+  display: none;
+}
+
+.formulario-input {
+  display: block;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  transition: border-width 0.2s ease;
+  border-radius: 2px;
+  color: #000;
+}
+
+.btns {
+  width: 100%;
+  padding: 10px 10px;
+  background: #282e32;
+  color: #fff;
+  display: block;
+  margin-top: 20px;
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 2px 2px;
+  border-bottom-width: 7px;
+}
+.marcador{
+  display: none;
+    padding: 2rem;
+    width: 20%;
+    justify-content: center;
+}
+
+.marcador ul{
+  list-style: none;
+  padding: 0rem 1rem;
+}
+
+.win-loose{
+  width: 30%;
+  line-height: 1.5;
+  padding: 2rem 40px;
+}
+.formulario-input {
+  width: 100%;
+  background: #fff;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 10px;
+  transition: 0.3s ease all;
+}
+
+.formulario-input:focus {
+  border: 3px solid #0075ff;
+  outline: none;
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.formulario-input-error {
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+}
+
+.formulario-input-error-activo {
+  display: block;
+}
+
+.formulario-mensaje-exito {
+  font-size: 14px;
+  color: #119200;
+  display: none;
+}
+
+.formulario-mensaje-exito-activo,
+.formulario-mensaje-activo {
+  display: block;
+}
+
+.formulario-grupo-correcto .formulario-validacion-estado {
+  color: #1ed12d;
+  opacity: 1;
+}
+
+.formulario-grupo-incorrecto .formulario-label {
+  color: #bb2929;
+}
+
+.formulario-grupo-incorrecto .formulario-validacion-estado {
+  color: #bb2929;
+  opacity: 1;
+}
+
+.formulario-grupo-incorrecto .formulario-input {
+  border: 3px solid #bb2929;
+}
+
+@media (max-width:1024px) {
+  .game,.win-loose {
+    width: auto;
+  }
+
+}
