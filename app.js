@@ -206,6 +206,8 @@ window.addEventListener("DOMContentLoaded", function () {
 const clearHistorialFn = () => {
   count = 0;
   localStorage.clear();
+  campos.usuario = false;
+  campos.password = false;
   document.querySelector(".login").style.display = "block";
   document.querySelector(".game").style.display = "none";
   document.querySelector(".marcador").style.display = "none";
