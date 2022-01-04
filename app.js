@@ -172,6 +172,10 @@ const gameOver = () => {
 const gameBack = () => {
   count = 0;
   result.innerHTML = "";
+  document.querySelector(".user i").className = "";
+  document.querySelector(".compu i").className = "";
+  document.querySelector(".user i").className = `fa fa-hand-rock`;
+  document.querySelector(".compu i").className = `fa fa-hand-rock`;
   document.querySelector(".game").style.display = "block";
   document.querySelector(".win-loose").style.display = "none";
 };
